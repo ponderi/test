@@ -25,6 +25,8 @@ public class Kadai1_3 {
 	        "password"
 	      );
 	      pstmt = con.prepareStatement("select * from questions where number = " + number);
+　　　　　　　// 藤井君ver
+	      //pstmt = con.prepareStatement("select * from questions ORDER BY RAND() LIMIT 1");
 	      rs = pstmt.executeQuery();
 	      while (rs.next()) {
 
